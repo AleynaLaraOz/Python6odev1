@@ -1,0 +1,167 @@
+#DEGİSKENLER
+
+baslik = "Haberiniz Olsun" #string
+vade = 12    #int integer
+faizOrani1 = 1.47     #float
+faizOrani2 = 1.44
+print(baslik)
+print(type(baslik))
+print(type(vade))
+print(type(faizOrani1))
+
+mesaj = "Hoşgeldin"
+müsteriAdi = "Lara"
+müsteriSoyadi = "Öz"
+sonucMesaj = mesaj+" "+müsteriAdi+" "+müsteriSoyadi+"!"
+print(sonucMesaj)
+
+sayi1 = 10
+sayi2 = 20
+print(sayi1+sayi2)
+
+
+
+#SARTBLOKLARİ
+
+dolarDun = 7.65
+dolarBugun = 7.65
+
+if dolarDun>dolarBugun:
+    print("Azalış Oku")
+    print("bitti")
+#elif else if anlamındadır. 
+elif dolarDun<dolarBugun:
+    print("Artış Oku")
+else:
+    print("Eşittir Oku")
+
+print("bitti")
+
+#if dolarDun<dolarBugun:
+    #print("Artış Oku")
+
+#if dolarDun==dolarBugun:
+    #print("Eşittir Oku")
+    
+#print("Artış Oku")
+#print("Azalış Oku")
+#print("Eşittir Oku")
+
+
+
+#LISTELER
+
+#Liste hazırlamak için [ ] kullanılır. arrays, dizi vs.
+krediler = ["Hızlı Kredi","Maaşını Halkbank'tan alanlara özel","Mutlu emekli ihtiyaç kredisi"]
+
+print(krediler)
+print(krediler[0])
+print(krediler[1])
+print(krediler[2])
+print(len(krediler)) #length ten gelir, dizi uzunluğunu ölçer.
+
+krediler[0] = "Çabuk Kredi"
+print(krediler)
+
+
+
+#DONGULER
+
+#döngüler
+krediler = ["Hızlı Kredi","Maaşını Halkbank'tan alanlara özel","Mutlu emekli ihtiyaç kredisi"]
+
+#alias - gezdiği 
+for kredi in krediler:
+    print(kredi)
+
+#for i in range(10):
+    #print(i)
+
+for x in range(len(krediler)):
+    print(x)
+
+for y in range(len(krediler)):
+    print(krediler[y])
+
+#for i in range(3,10):
+    #print(i)
+
+#for i in range(0,10,2):
+    #print(i)
+
+for i in range(0,11,2):
+    print(i)
+    
+    
+    
+    #FONKSİYONLAR
+    
+    
+def kredileriListele():
+    krediler =["Maaşını Halkbank'tan alanlara özel","Mutlu emekli ihtiyaç kredisi"]
+    for kredi in krediler:
+        print("<option>"+kredi+"<option>")
+
+
+kredileriListele()
+kredileriListele()
+kredileriListele()
+kredileriListele()
+kredileriListele()
+kredileriListele() 
+
+
+
+#MAIN.PY DERS1 05.04.23
+
+print("Merhaba Etiya")
+#bir yorum yaptım :)))
+
+#değişkenler-start
+#metinsel,numerik,obje
+text = "Merhaba Etiya, Hoş geldiniz"
+print(text)
+print(text)
+print(text) 
+text = "selam"
+print(text)
+print(text)
+studentcount= 45 #int integer tam sayı
+print(studentcount + 5)
+averagepoint=25.5 #double decimal, float, ondalıklı sayı
+print(averagepoint + 5)
+isverified=True #bool, boolean = true veya false
+print(isverified)
+print(type(text))
+print(type(studentcount))
+print(type(averagepoint))
+print(type(isverified))
+#değişkenler son 
+
+#operatörler başlangıç
+number = 10 
+#matematiksel operatörler - mantıksal operatörler 
+print(number + 10)
+print(number + number)
+
+print(number - 5)
+
+print(number / 2) #ondalık kısmı - tam bölünse dahi, ondalıkı sayı kalabilir. 
+
+print(number * 5)
+
+print(number % 2) #mod değerini verir. soldakinin sağdakine bölümünden kalan sayı
+
+#mantıksal operatörler, bir değerin birbirine eşit küçük 3 katı olma durumu gibi mantıksal işlemleri yapmayı sağlarlar
+
+print(number == 10)
+print(number != 10)
+
+print(number > 10)
+print(number >= 10)
+
+print(number < 10)
+print(number <= 10)
+
+
+#operatörler son 
